@@ -88,7 +88,7 @@ while True:
         continue  # Блокує гру після перемоги
 
     if game_state:
-        back = image.load("back1.jpg")
+        back = image.load("back.jpg")
         back = transform.scale(back, (800, 600))
         screen.blit(back, (0, 0))
         draw.rect(screen, (0, 255, 0), (20, game_state['paddles']['0'], 20, 100))
